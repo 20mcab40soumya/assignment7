@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC"-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm">
+<head>
+	<title>border</title>
+</head>
+<body style="background-color: orange; color: green;">
+	<script type="text/javascript">
+
+		var bordersize = prompt("Select a table border size \n"+
+								"0 (no border)\n"+
+								"1 (1 pixel border)\n"+
+								"4 (4 pixel border)\n"+
+								"8 (8 pixel border)\n");
+
+		switch(bordersize){
+			case "0":document.write("<table>");
+					 break;
+			case "1":document.write("<table border='1'>");
+					 break;
+			case "4":document.write("<table border='4'>");
+					 break;
+			case "8":document.write("<table border='8'>");
+					 break;
+			default:document.write("Error - Invalid choice: ",bordersize,"<br>");
+					 break;
+		}
+
+		document.write("<caption>Countries, Capital and Language</caption>");
+		document.write("<tr>",
+					   "<th/>",
+                                                                                     
+					  "<th>Capital</th>",
+					   "<th>Language</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>India</th>",
+					   "<th>New Delhi</th>",
+					   "<th>Hindi</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>France</th>",
+					   "<th>Paris</th>",
+					   "<th>French</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>New Zealand</th>",
+					   "<th>Wellington</th>",
+					   "<th>English</th>",
+					   "</tr>",
+					  
+					   "</table>");
+
+	</script>
+</body>
